@@ -1,0 +1,112 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  border: 1px solid black;
+  height: auto;
+  width: 320px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#btn {
+  padding: 15px 20px;
+  font-size: 22px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  background-color: antiquewhite;
+  transition: 0.3s ease;
+}
+
+#btn:hover {
+  background-color: #ffe0b5;
+}
+
+#classList {
+  width: 600px;
+  border: 1px solid black;
+  height: auto;
+  margin-top: 30px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+#classList li {
+  width: 90%;
+  height: auto;
+  padding: 15px;
+  background-color: antiquewhite;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  list-style: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#classList li:hover {
+  transform: translateY(-30px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(-50%);
+}
+
+.slide-in {
+  animation: slideLeft 0.8s ease-out forwards;
+  transition: all 0.5s ease;
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#classList li h4 {
+  color: black;
+  font-size: 22px;
+  font-weight: 900;
+  margin: 5px 0;
+  text-align: center;
+}
+
+#classList li h3 {
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#classList li p {
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#wait {
+  display: none;
+  font-size: 25px;
+  font-weight: 800;
+}
